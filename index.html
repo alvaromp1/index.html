@@ -230,7 +230,56 @@ de la humanidad.
 </p>
 
 </section>
+<section id="chatbot">
+<h2>Chat Filosófico</h2>
 
+<div class="chat-container">
+    <div id="chat-box"></div>
+
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Haz una pregunta sobre filosofía...">
+        <button onclick="enviarPregunta()">Enviar</button>
+    </div>
+</div>
+</section>
+<section id="actividades">
+<h2>Actividades de Filosofía</h2>
+
+<!-- QUIZ -->
+<div class="actividad">
+<h3>Quiz rápido</h3>
+
+<p>¿Quién fue el maestro de Platón?</p>
+<button onclick="responderQuiz('a')">Aristóteles</button>
+<button onclick="responderQuiz('b')">Sócrates</button>
+<button onclick="responderQuiz('c')">Nietzsche</button>
+
+<p id="resultado-quiz"></p>
+</div>
+
+<!-- COMPLETAR FRASE -->
+<div class="actividad">
+<h3>Completa la frase</h3>
+
+<p>"Solo sé que no sé ____"</p>
+<input type="text" id="frase">
+<button onclick="verificarFrase()">Comprobar</button>
+
+<p id="resultado-frase"></p>
+</div>
+
+<!-- VERDADERO/FALSO -->
+<div class="actividad">
+<h3>Verdadero o falso</h3>
+
+<p>Aristóteles creía en la observación del mundo real.</p>
+<button onclick="vf(true)">Verdadero</button>
+<button onclick="vf(false)">Falso</button>
+
+<p id="resultado-vf"></p>
+</div>
+
+</section>
 <footer>
 <p>© 2026 Academia de Filosofía</p>
 <p>Proyecto educativo dedicado a la difusión del pensamiento filosófico.</p>
